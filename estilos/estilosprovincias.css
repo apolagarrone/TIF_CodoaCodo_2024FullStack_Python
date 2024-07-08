@@ -1,0 +1,1245 @@
+/* Color Theme Swatches in Hex */
+.pastizales_inundables-1-hex { color: #395D73; }
+.pastizales_inundables-2-hex { color: #7EADBF; }
+.pastizales_inundables-3-hex { color: #F2DA91; }
+.pastizales_inundables-4-hex { color: #F2B077; }
+.pastizales_inundables-5-hex { color: #594736; }
+
+/* Color Theme Swatches in RGBA */
+.pastizales_inundables-1-rgba { color: rgba(57, 93, 115, 1); }
+.pastizales_inundables-2-rgba { color: rgba(126, 173, 191, 1); }
+.pastizales_inundables-3-rgba { color: rgba(242, 218, 145, 1); }
+.pastizales_inundables-4-rgba { color: rgba(242, 176, 119, 1); }
+.pastizales_inundables-5-rgba { color: rgba(89, 71, 54, 1); }
+
+
+/* Color Theme Swatches in Hex */
+.cataratasII-1-hex { color: #95ACBF; }
+.cataratasII-2-hex { color: #A0A603; }
+.cataratasII-3-hex { color: #6F7302; }
+.cataratasII-4-hex { color: #595302; }
+.cataratasII-5-hex { color: #8C5637; }
+
+/* Color Theme Swatches in RGBA */
+.cataratasII-1-rgba { color: rgba(149, 172, 191, 1); }
+.cataratasII-2-rgba { color: rgba(160, 166, 3, 1); }
+.cataratasII-3-rgba { color: rgba(111, 115, 2, 1); }
+.cataratasII-4-rgba { color: rgba(89, 83, 2, 1); }
+.cataratasII-5-rgba { color: rgba(140, 86, 55, 1); }
+
+
+
+*{
+    font-family: "poppins", "raleway", sans-serif   ;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth; 
+}
+
+
+body{
+    background-color: #F3F3F3;
+}
+
+body, footer, main, header {
+    width: 100%;
+}
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+a name{
+    padding-top: 150px;
+}
+
+h1, h2, h5, h6{
+    font-family: poppins;
+}
+
+h3 {
+    font-family: poppins;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+h4{
+    font-family: poppins;
+    font-size: 24px;
+}
+
+p{
+    font-family: raleway;
+    font-size: 1em;
+}
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/*NAV*/
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.header{
+    background-color: transparent;
+    color: #d2d2d2;
+    position: fixed;
+    /* Se utiliza para posicionar un elemento de forma fija en relación con la ventana del navegador, lo que significa que el elemento permanece en la misma posición, incluso cuando se desplaza la página. */
+    top: 0px;
+    left: 0;
+    width: 98%;
+    z-index: 9999;
+    margin: auto;
+}
+
+.nav{
+    width: 300px;
+    position: fixed;
+    background-color: #cfd0aa;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+.logo {
+    display: none;
+}
+
+.menu a{
+    display: block;
+    padding: 30px; 
+    color: black;
+}
+
+/*.menu a:hover
+{
+    background-color: rgb(168, 165, 128);
+}*/
+
+.hamb {
+    cursor: pointer;
+    float: right;
+    padding: 20px 20px;
+}
+
+
+.hamb-line {
+    background: black;
+    display: block;
+    height: 3px;
+    position: relative;
+    width: 24px;
+}
+
+.hamb-line::before, 
+.hamb-line::after {
+    background: rgb(0, 0, 0);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before {
+    top: 5px;
+}
+
+.hamb-line::after {
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+}
+
+.side-menu:checked ~ nav {
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+
+.iconos-contacto, .iconos-redes {
+    display: none;
+}
+
+
+/*SLIDE ENCABEZADO*/
+
+.slidefotmisiones, .slidefotcordoba,.slidefotsalta ,.slidefotushuaia {
+    width: 100%;
+    height: 50vh;
+    margin: auto;    
+    animation-duration: 19s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.slidefotmisiones{
+    animation-name: slidemisiones;
+}
+@keyframes slidemisiones{
+    0%{background-image: url(../img/misiones/cataratas.jpg); background-size: cover; background-position: center;}
+    15%{background-image: url(../img/misiones/helecho.jpg); background-size: cover; background-position: center}
+    35%{background-image: url(../img/misiones/orquidea.jpg);background-size: cover; background-position: center}
+    60%{background-image: url(../img/misiones/yerbamate.jpg);background-size: cover; background-position: center}
+    85%{background-image: url(../img/misiones/artesanias.jpg);background-size: cover; background-position: center}
+    100%{background-image: url(../img/misiones/cataratas.jpg);background-size: cover; background-position: center}
+}   
+
+.slidefotcordoba{
+    animation-name: slidecordoba;
+}
+@keyframes slidecordoba{
+    0%{background-image: url(../img/cordoba/carrusel_pn_ansenuza_07_ph_pablo_rodriguez_merkel.jpeg); background-size: cover; background-position: center;}
+    15%{background-image: url(../img/cordoba/pastizales_inundables._ph_pablo_rodriguez_merkel.jpg); background-size: cover; background-position: center}
+    35%{background-image: url(../img/cordoba/carrusel_traslasierra_00.jpeg);background-size: cover; background-position: center}
+    60%{background-image: url(../img/cordoba/carrusel_pn_quebrada_del_condorito_03.jpg);background-size: cover; background-position: center}
+    85%{background-image: url(../img/cordoba/villa_yacanto.jpg);background-size: cover; background-position: center}
+    100%{background-image: url(../img/cordoba/carrusel_pn_ansenuza_07_ph_pablo_rodriguez_merkel.jpeg);background-size: cover; background-position: center}
+}   
+
+.slidefotsalta{
+    animation-name: slidesalta;
+}
+@keyframes slidesalta{
+    0%{background-image: url(../img/salta/Valle-de-Cusi-Cusi-Salta-Province-Jujuy-Argentina.jpg); background-size: cover; background-position: center;}
+    15%{background-image: url(../img/salta/salinas.jpg); background-size: cover; background-position: center}
+    35%{background-image: url(../img/salta/cardones34.jpg);background-size: cover; background-position: center}
+    60%{background-image: url(../img/salta/99.jpg);background-size: cover; background-position: center}
+    85%{background-image: url(../img/salta/14.jpg);background-size: cover; background-position: center}
+    100%{background-image: url(../img/salta/5b.jpg);background-size: cover; background-position: center}
+}  
+
+.slidefotushuaia{
+    animation-name: slideushuaia;
+}
+@keyframes slideushuaia{
+    0%{background-image: url(../img/ushuaia/1920_ushuaiaargentina1.jpg); background-size: cover; background-position: center;}
+    15%{background-image: url(../img/ushuaia/20917-ushuaia-argentina-invierno.webp); background-size: cover; background-position: center}
+    35%{background-image: url(../img/ushuaia/sli.jpg);background-size: cover; background-position: center}
+    60%{background-image: url(../img/ushuaia/USH-1920X500.png);background-size: cover; background-position: center}
+    85%{background-image: url(../img/ushuaia/pingui.jpg);background-size: cover; background-position: center}
+    100%{background-image: url(../img/ushuaia/WhatsApp-Image-2023-09-21-at-15.43.10.jpeg);background-size: cover; background-position: center}
+}    
+
+.titulo{
+    background-color: rgba(255, 255, 255, 0.2) ;
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    color: white;
+}
+
+.titulo h1{
+    max-width: 90%;
+    font-size: 50px;
+    padding: 0 3%0 15px;
+}
+
+.titulo h2{
+    max-width: 90%;
+    font-size: 40px;
+}
+
+/*SECCION 1*/
+
+.presentacion{
+    background-color: #F3F3F3;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    box-sizing: inherit;
+}
+
+.presentacion p{
+    padding: 50px;
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*cuadros con destinos*/
+
+.contenedor-dest{
+    max-width: 1200px;
+    margin: 2px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.destinos{
+    width: 390px;
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: beige;
+    box-shadow: 0px 1px 10px rgb(0,0,0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.destinosalta {
+    background: #e4c2a0;
+}
+
+.destinoushuaia {
+    background: #b5cdd1b5;
+}
+
+.destinos:hover{
+    box-shadow: 5px 5px 20px rgb(0,0,0, 0.4); 
+    transform: translateY(-3%);
+    transition: all 400ms ease;
+}
+
+.destinos img{
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+}
+
+.destinos h4{
+    padding-top: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.destinos p{
+    font-size: 1em;
+    height: 30%;
+    padding: 20px 25px 40px 25px;
+    text-align: justify;
+}
+
+.destinos a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    width: 70%;
+    height: 35px;
+    padding: 1% 0 1% 0;
+    margin: auto;
+    border: 1px solid #405319;
+    border-radius: 5px;
+    font-family: poppins;
+    text-decoration: none;
+    color: #595302;
+    transition: all 400ms ease;
+    transition: 0.5s all ease-out;  
+}
+
+.destinos a:hover{
+    background: #3D5301;
+    color:white ;
+}
+
+.destinos .a-dest-cordoba {
+    color:  #395D73;
+}
+
+.destinos .a-dest-cordoba:hover{
+    background: #395D73;
+    color:white ;
+}
+
+.destinosalta a {
+    color: rgb(108, 14, 14);
+}
+
+.destinos a:hover {
+    background: #214e03;
+    color: white;
+}
+
+.destinosalta a:hover {
+    background: rgb(167, 88, 55);
+    color: #f4d3b0c8;
+}
+
+.destinoushuaia a {
+    color: rgb(0, 0, 0);
+}
+
+.destinoushuaia a:hover {
+    background:#395D73;
+    color: #ffffffc8;
+}
+
+/*Detalle destinos */
+
+/*Destino1 + 2*/
+
+.seccionDestino1, .seccionDestino2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 170px;
+}
+
+.seccionDestino1{
+    background-color: #e6e7c4;
+}
+
+.seccionDestino1salta {
+    background-color: #f4d3b0c8;
+}
+
+.seccionDestino1Ushuaia {
+    background-color: #bbd0dd;
+}
+
+.seccionDestino1 h4, .seccionDestino2 h4{
+    padding: 15px;
+} 
+
+.seccionDestino1 h3{
+    background-color: #6F7302;
+    color: white;
+    padding: 20px;
+}
+
+.seccionDestino1salta h3 {
+    background-color: rgb(167, 88, 55);
+    padding: 20px;
+}
+
+.seccionDestino1Ushuaia h3 {
+    background-color: rgb(161, 162, 168);
+    padding: 20px;
+}
+
+.destino1, .destino2{
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.destino1 p, .destino2 p {
+    font-size: 1em;
+    text-align: justify;
+    width: 30vw;
+    padding: 15px;
+    align-self: center;
+}
+
+.imageDestino1, .imageDestino2{
+    width: 30vw;
+    object-fit: cover;
+}
+
+/*destino 2*/
+
+.seccionDestino2 {
+    background-color: white;
+}
+
+.seccionDestino2 h3{
+    background-color: #A0A603;
+    color: white;
+    padding: 20px;
+}
+
+.seccionDestino1 .sec-dest1-cordoba {
+    background-color: #594736;
+}
+
+.seccionDestino2 .sec-dest2-cordoba {
+    background-color: #7EADBF;
+}
+
+.seccionDestino2salta h3 {
+    background-color: rgb(149, 81, 52);
+}
+
+.seccionDestino2Ushuaia h3 {
+    background-color:#395D73;
+}
+
+.destino2 {
+    flex-direction: row-reverse;
+}
+
+/* 
+footer{
+    /*position: sticky;
+    bottom: 0;
+    /*background-color: rgb(90, 90, 90);
+    text-align: center;
+    /*padding: 10px;
+    background-color: #000000ff;
+    position: relative;
+    width: 100vw;
+    max-height: 10vh;
+    min-height: 350px;
+    padding: 3rem 1rem 0;
+}
+*/
+
+.mapa{
+    position: relative;
+    text-align: center;    
+    padding-bottom: 50px;
+}
+
+.mapa h4{
+    text-align: left;
+}
+
+
+/* FOOTER*/
+
+footer{
+    background-color: #000000ff;
+    position: relative;
+    width: 100vw;
+    min-height: 350px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 21px 10px   ;
+}
+
+.ppal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col{
+    width: 80%;
+    color:#f2f2f2f2;
+    font-family: poppins;
+    padding:0 2rem;
+}
+
+.col .logo{
+    display: flex;
+    width: 200px;
+    margin: 25px auto;
+}
+
+.col h3{
+    color: white;
+    margin: 20px auto;
+    position: relative;
+    cursor: default;
+    letter-spacing: 5px;
+    font-size: 1.5em;
+}
+
+.col .social a i {
+    color: #7AB730;
+    width: 45px;
+    height: 45px;
+    margin-top: 2rem;
+    margin-right: 10px;
+    text-align: center;
+    border-color: #7AB730;
+    border-style: outset;
+    transition: all 300ms ease;
+    font-size: 2.35em;
+    float: inline-start;
+}
+
+.col .social a i:hover{
+    background-color: #7AB730;
+    color: white;
+}
+
+.col .links a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color:#6c757d;
+    margin-bottom: 5px;
+    position: relative;
+    transition: all 300ms ease;
+}
+
+.col .links a:hover{
+    transform: translateX(-8px);
+    color:#7AB730;
+}
+
+.col .contactos-detalles{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.col .contactos-detalles .bx{
+    margin-right:15px;
+    color: #7AB730;
+    font-size: 26px;
+}
+
+.copy{
+    margin-top: 30px;
+    padding: 15px 0;
+}
+
+
+/* SECCION FOOTER
+
+footer{
+    background-color: #000000ff;
+    position: relative;
+    width: 100vw;
+    min-height: 350px;
+    padding: 3rem 1rem 0;
+}
+.container {
+   max-width: 1300px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.ppal{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.col{
+   min-width: 250px;
+   color:#f2f2f2f2;
+   font-family: poppins;
+   padding:0 2rem;
+}
+.col .logo{
+   width: 200px;
+   margin-bottom:25px;
+}
+.col h3{
+   color: white;
+   margin-bottom: 20px;
+   position: relative;
+   cursor: default;
+   letter-spacing: 5px;
+}
+.col .social a i{
+   color: #7AB730;
+   width: 45px;
+   height: 45px;
+   margin-top:2rem;
+   margin-right: 10px;
+   text-align: center;
+   border-color: #7AB730;
+   border-style: outset;
+   transition: all 300ms ease;
+   font-size: 2.35em;
+   float: inline-start;
+}
+.col .social a i:hover{
+    background-color: #7AB730;
+    color: white;
+}
+.col .links a{
+   display: block;
+   text-decoration: none;
+   color:#6c757d;
+   margin-bottom: 5px;
+   position: relative;
+   transition: all 300ms ease;
+}
+.col .links a:hover{
+   transform: translateX(-8px);
+   color:#7AB730;
+}
+.col .contactos-detalles{
+   display: inline-flex;
+   justify-content: space-between;
+}
+.col .contactos-detalles i{
+   margin-right:15px;
+}
+.copy{
+    margin-top: 30px;
+    padding: 15px 0;
+}
+*/
+
+
+/*MEDIA QUERYES*/
+
+@media only screen and (max-width: 600px) {
+
+.menu{
+    display: block;
+}
+
+/*.nav-misiones, .nav-cordoba, .navSalta {
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        z-index: 10; 
+}*/
+
+.titulo h1, h2{
+    padding: 0 15px 0 15px;
+}   
+
+.presentacion{
+    
+    height: 40%;
+}
+
+.presentacion p{
+    padding: 0;
+    
+}
+
+.contenedor-dest {
+    max-width: 100%;
+    margin: auto;
+    display: flex;       
+    flex-direction: column;
+    row-gap: 10px;
+    box-sizing: content-box;
+}   
+
+.destinos{
+    margin: 10px auto;
+    width: 90%;
+    max-width: 600px;
+    
+}
+
+.destinos p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.destinos img{
+    min-width: 100%;
+    margin: auto;
+}
+
+.destino1, .destino2{
+    display: flex;
+    flex-direction: column;
+
+}
+    
+.destino1 p, .destino2 p {
+    width: 90vw;
+    padding: 15px;    
+}
+
+
+.imageDestino1, .imageDestino2{
+    width: 90vw;
+    height:40vh;
+    object-fit: cover;
+    margin: auto;
+}
+
+.seccionDestino1, .seccionDestino2 {
+    padding-top: 35px;
+}
+.mapa iframe{
+    max-width: 90vw;
+    max-height: 30vh;
+}
+
+/* FOOTER */
+
+    .ppal{
+    flex-direction: column;
+    }
+
+    .col {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .col i{
+        text-align: center
+        ;
+    }
+
+    
+}
+
+
+
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+
+    .mapa iframe{
+        max-width: 80vw;
+        max-height: 30vh;
+    }
+
+    .header
+    {
+        width: 99%;
+        margin: auto;
+        background-color: #ffffff;
+        height: 80px;
+        font-size: 14px;
+        z-index: 9999;
+        padding: 10px 15px;
+    }
+
+.nav  {  
+    display: flex;
+    width: 85%;    
+    margin: 55px auto;
+    justify-content: space-between;
+    max-height: none;
+    top: 15px; /*modif pao*/
+    position:sticky;
+    background-color:white;
+    padding: 20px;
+    box-shadow:  0rem 12px 20px 12px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+}
+
+    .nav a {
+        
+       color: #000000;
+        font-size: 14px; /*modif pao*/
+        font-weight: 600;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 10px  10px;
+        margin: 0 5px 0 5px;
+        transition: 0.5s all ease-out;  
+     
+    }
+
+    .logo {
+        width: 18vw;
+        display: inline ;
+        justify-content: left;
+        object-fit: contain;
+    }
+
+
+    .menu  {
+    display: flex;
+    justify-content: right;
+    align-content: flex-end;
+    text-align: right;
+    
+    }
+
+    .nav-misiones a:hover{
+        background-color: #595302;
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-cordoba a:hover {
+        background-color: #594736;
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-salta a:hover {
+        background-color: rgb(171, 100, 100);
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    .nav-ushuaia a:hover {
+        background-color: #395D73;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }    
+    
+    li .btn{
+        display: flex;
+    }
+
+    .hamb
+    {
+        display: none;
+    }
+
+    .iconos-contacto, .iconos-redes{
+        display: inline ;
+    }
+
+
+    .iconos-contacto a, p {
+        display: inline-flex;
+        font-size: 14px;
+        text-decoration: none;
+        color: #6c757d;
+        padding: 5px 0px 0px 5px;
+        float: left;
+    }
+
+    .iconos-redes, .bx {
+        display: flex;
+        color: #7AB730;
+        font-size: 26px;
+        float: right;
+        padding: 5px 5px 0px 0px;   
+    }
+    .bx{
+        padding: 0px 5px;
+    }
+
+.slidefotmisiones, .slidefotcordoba, .slidefotsalta, .slidefotushuaia {
+    margin: 90px 0px auto;
+}
+
+/*FOOTER*/
+
+.ppal {
+    flex-direction: column;
+}
+
+
+}
+    
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .header
+{
+    width: 99%;
+    margin: auto;
+    background-color: #ffffff;
+    height: 80px;
+    font-size: 14px;
+    z-index: 9999;
+    padding: 10px 15px;
+}
+
+    .mapa iframe{
+        max-width: 80vw;
+        max-height: 30vh;
+    }
+
+    .header {
+    font-size: 14px;
+    }
+
+
+.nav  {  
+    display: flex;
+    width: 70%;    
+    margin: 55px auto;
+    justify-content: space-between;
+    max-height: none;
+    top: 15px; /*modif pao*/
+    position:sticky;
+    background-color:white;
+    padding: 20px;
+    box-shadow:  0rem 12px 20px 12px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+}
+
+.nav a {
+    color: #000000;
+    font-size: 16px; /*modif pao*/
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px 25px 10px 25px;
+    margin: 0 5px 0 5px;
+    transition: 0.5s all ease-out;  
+}
+
+    .logo {
+    width: 12vw;
+    display: inline ;
+    justify-content: left;
+    object-fit: contain;
+}
+
+
+.menu  {
+    display: flex;
+    justify-content: right;
+    align-content: flex-end;
+    text-align: right;
+    
+    }
+
+    .nav-misiones a:hover{
+        background-color: #595302;
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-cordoba a:hover {
+        background-color: #594736;
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-salta a:hover {
+        background-color: rgb(171, 100, 100);
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    .nav-ushuaia a:hover {
+        background-color: #395D73;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }    
+    
+    li .btn{
+        display: flex;
+    }
+
+    .hamb
+    {
+        display: none;
+    }
+
+    .iconos-contacto, .iconos-redes{
+       display: inline ;
+       
+    }
+
+
+    .iconos-contacto a, p {
+        display: inline-flex;
+        font-size: 14px;
+        text-decoration: none;
+        color: #6c757d;
+        padding: 5px 0px 0px 5px;
+        float: left;
+    }
+
+    .iconos-redes, .bx {
+        display: flex;
+        color: #7AB730;
+        font-size: 26px;
+        float: right;
+        padding: 8px 12px 0px 12px;   
+    }
+    .bx{
+        padding: 0px 5px;
+    }
+
+.slidefotmisiones, .slidefotcordoba, .slidefotsalta, .slidefotushuaia {
+    margin: 90px 0px auto;
+}
+    #contenedor-dest {
+        display: flex;
+        margin: auto;
+        
+       flex-wrap: wrap;
+       box-sizing: border-box;
+    }   
+
+
+.destinos{
+    margin: 5px; 
+   
+}
+.destinos img{
+    min-width: 100%;
+    height: 45%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.destinos a {
+    align-self: flex-end;
+   
+}
+}
+
+/*NAV INVERTIDO*/
+/*@media (min-width: 768px){
+
+.header
+{
+    width: 98%;
+    background-color: #ffffff;
+    height: 90px;
+    font-size: 14px;
+    z-index: 9999;
+    padding: 10px 15px;
+}
+
+
+.nav  {  
+    display: flex;
+    width: 70%;    
+    margin: 55px auto;
+    justify-content: space-between;
+    max-height: none;
+    top: 15px; /*modif pao
+    position:sticky;
+    background-color:white;
+    padding: 20px;
+    box-shadow:  0rem 12px 20px 12px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+}
+
+    .nav a {
+        
+       color: #000000;
+        font-size: 16px; /*modif pao
+        font-weight: 600;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 10px 25px 10px 25px;
+        margin: 0 5px 0 5px;
+        transition: 0.5s all ease-out;  
+     
+    }
+    .nav i{
+        font-size: 18px;
+        font-weight: 600;
+        color: #000000;
+        margin: auto;
+    }
+    .logo {
+        width: 12vw;
+        display: inline ;
+        justify-content: left;
+        object-fit: contain;
+    }
+
+
+    .menu  {
+        display: flex;
+    justify-content: right;
+    align-content: flex-end;
+    text-align: right;
+    
+    }
+
+    .nav-misiones a:hover{
+        background-color: #595302;
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-cordoba a:hover {
+        background-color: #395D73;
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-salta a:hover {
+        background-color: rgb(171, 100, 100);
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+    
+    li .btn{
+        display: flex;
+    }
+
+    .hamb
+    {
+        display: none;
+    }
+
+    .iconos-contacto, .iconos-redes{
+       display: inline ;
+       
+    }
+
+
+    .iconos-contacto a, p {
+        display: inline-flex;
+        font-size: 14px;
+        text-decoration: none;
+        color: #6c757d;
+        padding: 5px 0px 0px 5px;
+        float: left;
+    }
+
+    .iconos-redes, .bx {
+        display: flex;
+        color: #7AB730;
+        font-size: 26px;
+        float: right;
+        padding: 5px 5px 0px 0px;   
+    }
+    .bx{
+        padding: 0px 5px;
+    }
+
+.slidefotmisiones, .slidefotcordoba, .slidefotsalta, .slidefotushuaia {
+    margin: 90px 0px auto;
+}
+
+}*/

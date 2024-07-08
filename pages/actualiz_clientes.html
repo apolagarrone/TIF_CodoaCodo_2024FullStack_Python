@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <title>ArgentiNA Viajes</title>
+</head>
+
+<body>
+    <a name="inicio"></a>
+    <header> 
+        <figure>
+            <div class="iconos-contacto">
+                <a href="info@codoacodo.com"><i class="bx bx-mail-send"></i>info@codoacodo.com   |   </a>
+                <a href="+5491112345678"><i class="bx bx-phone"></i>  +54 9 11 1234 5678</a>
+            </div>
+            <div class="iconos-redes">
+                <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </figure>
+    </header>
+
+    <nav>   <!--saqué el nav del header para que funcione en forma independiente  -->
+        <img class="logo" src="../img/Logo_ArgentiNA.webp" alt="imagen del logo de Argentina Viajes">
+        <div class="nav-items">
+            <a id="IrAlRegistro" class="headerActionButton" href="../index.html#registro">Pagina principal</a>
+            <!-- <button type="menu" id="VerClientesVigentes" class="headerActionButton" title="Ver clientes vigentes">Vigentes</button>
+            <button type="menu" id="VerClientesInactivos" class="headerActionButton" title="Ver clientes dados de baja">Inactivos</button> -->
+            <a href="index4.html"><button type="menu" id="VerClientesTodos" class="headerActionButton active" title="Ver todos los clientes">Todos</button></a>
+        </div>
+</nav>
+
+    <main>
+        <a name="actualizacion"></a>
+        <section class="actualizacion">
+            <div class="cont-actualizacion">
+            <article>
+                <br><br>
+                <h2 id="TareasPendientes">Edición de Registros<br></h2>
+                <!-- <form id="Buscar">
+                    <input type="text" id="IdCliente" name="IdCliente" placeholder="Ingrese N° de cliente">
+                    <button type="button" id="BuscarIdCliente" class="headerActionButton" title="Buscar por N° de Cliente">Buscar cliente</button>
+                </form> -->
+                
+           
+                <form id="FormularioActualizacion" method="POST"> 
+                    <fieldset class="datosPersonales">
+                        <legend>Datos Personales</legend>
+                        <label for="NombreF">Nombre</label>
+                        <input id="NombreF" type="text" name="NombreF" placeholder="Nombre">  
+                        <label for="Apellido">Apellido</label>
+                        <input id="Apellido" type="text" name="Apellido" placeholder="Apellido">  
+                        <label for="Edad">Edad</label>
+                        <input id="Edad" type="text" name="Edad" placeholder="Edad">
+                        <label for="Email">E-mail</label>
+                        <input id="Email" type="email" name="Email" placeholder="E-mail" autocomplete="email">
+                        <input id="Vigencia" type="text" name="Vigencia" placeholder="Vigencia" hidden>
+                    </fieldset>
+                    <fieldset class="datosRegistro">
+                        <legend>Datos de Registro</legend>
+                        <label for="Id_cliente">Id.Cliente</label>
+                        <input id="Id_Cliente" name="Id_Cliente" type="text" readonly>
+                        <label for="Usuario">Usuario</label>
+                        <input id="Usuario" type="text" name="Usuario" placeholder="Elegí tu nombre de usuario" readonly>    
+                    </fieldset>
+                    <fieldset class="datosDestinos">
+                        <legend>Destino y Actividades</legend>
+                        <label for="Destino">Provincia</label>
+                        <select name="Destino" id="Destino" >
+                            <option value="Misiones">Misiones</option>
+                            <option value=Salta>Salta</option>
+                            <option value="Cordoba">Córdoba</option>
+                            <option value="Ushuaia">Ushuaia</option>
+                        </select>   
+                        <label for="Actividades">Actividades</label>             
+                        <input id="Actividades" type="text" name="Actividades">
+                        
+                    </fieldset>
+                    <fieldset class="botones-form">
+                        <button type="button" value="Enviar datos" id="ActualizarRegistro">confirmar cambios</button>
+                        <a href="index4.html" id="Cancelar" title="Cancelar"><i class='bx bxs-message-square-x'></i>Cancelar</a>
+                    </fieldset>
+                </form>
+                </article>
+                </div>
+        </section>
+    </main>
+<footer>
+<section class="container">
+    <section class="ppal">
+            <figure class="col">
+            <a href="#inicio"><img src="../img/Logo_ArgentiNA-vde-bco.webp" alt="" class="logo"></a>
+                <p>
+                Para nosotros lo mas importante es tu comodidad, ten siempre presente que daremos lo mejor para que tu estes bien.
+                </p>
+
+                <div class="social">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>                
+                </div>
+            </figure>
+
+            <figure class="col" id="servicios">
+                <h3>NUESTROS SERVICIOS</h3>
+                <div class="links">
+                <a href="#">Nosotros</a>
+                <a href="#">Destination</a>
+                <a href="#">Servicios</a>
+                </div>
+            </figure>
+
+            <figure class="col" id="contactos">
+                <h3>CONTACTO</h3>
+                <div class="contactos-detalles">
+                    <i class="bx bx-map"></i>
+                    <p>Calle 123, Siempre Viva</p>
+                </div>
+                <div class="contactos-detalles">
+                    <i class="bx bx-phone"></i>
+                    <p>+54 9 11 1234 5678</p>
+                </div>
+                <div class="contactos-detalles">
+                <i class="bx bx-mail-send"></i>
+                <p>info@codoacodo.com</p>
+                </div>
+            </figure>
+    </section>
+    <section class="copy">
+        <hr>
+        <p> Copyright Programa Codo a Codo - Equipo 20 - Todos los derechos reservados </p>
+    </section>
+</section>
+</footer>
+
+<!-- script de json -->
+<script src="../js/fetchData.js"></script>
+<script src="../js/actualiz_clientes.js"></script>
+<script src="../js/index4.js"></script> 
+
+</body>
+</html>

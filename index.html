@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <title>ArgentiNA Viajes</title>
+</head>
+
+<body>
+    <a name="inicio"></a>
+    <header> 
+        <figure>
+            <div class="iconos-contacto">
+                <a href="info@codoacodo.com"><i class="bx bx-mail-send"></i>info@codoacodo.com   |   </a>
+                <a href="+5491112345678"><i class="bx bx-phone"></i>  +54 9 11 1234 5678</a>
+            </div>
+            <div class="iconos-redes">
+                <a href="https://www.facebook.com" target="_self"><i class='bx bxl-facebook'></i></a>
+                <a href="https://twitter.com/?lang=es" target="_self"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com" target="_self"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com" target="_self"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.youtube.com" target="_self"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </figure>
+    </header>
+
+    <nav>   <!--saqué el nav del header para que funcione en forma independiente  -->
+            <img class="logo" src="img/Logo_ArgentiNA.webp" alt="imagen del logo de Argentina Viajes">
+            <div class="nav-items">
+
+                <a href="#inicio">Inicio</a>
+                <a href="#destinos">Destinos</a>
+                <a href="#registro">Registro</a>
+                <a href="#testimonios">Testimonios</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+    </nav>
+
+    <main>
+        <section>
+            <article>
+                <div class="presentacion">
+
+                    <img src="img/about.jpg" alt="imagen de una viajera">
+
+                    <article class="present-article">
+                        <h2>Nosotros</h2>
+                        <h1>Destinos turísticos dentro 
+                            de tu prespuesto</h1>
+                        <p>
+                            Tenemos la mejor selección de tours en Argentina, ¡y al mejor precio! Descubre todo lo que puedes hacer en tu viaje, recorriendo nuestras cuidades, paisajes, fauna y flora, en donde, solo aqui en Argentina.
+                        </p>
+                        <div class="present-img">
+                            <img  src="img/salta/about-1.jpg" alt="paisaje de quebrada de las conchas">
+                            <img  src="img/ushuaia/about-2.jpg" alt="paisaje del faro del fin del mundo">
+                        </div>
+                    </article>
+                </div>
+                </article>
+            
+        </section>
+        
+<a name="destinos"></a> <!-- agrego para el link y actualizo seccion completa -->
+<!-- agrego espacios para evitar solapamiento con nav -->
+<br>
+<br>
+<br>    
+<br>
+        <section>   <!--Actualizo seccion completa P  -->
+            <article class="encabezado-destinos">
+                <h2 >Destinos</h2>
+                <h1>Top de Destinos</h1>
+                    <div class="cont-destinos">
+                        <figure class="destinos">
+                            <img src="img/misiones/coati.jpg" alt=""><a href="misiones.html" target="_self"> <h5>Misiones</h5></a>
+                        </figure>
+
+                        <figure class="destinos">
+                            <img src="img/salta/destinosalta.jpg" alt="">
+                            <a href="salta.html" target="_self"><h5>Salta</h5></a>
+                        </figure>
+                        <figure class="destinos">
+                            <img src="img/cordoba/carrusel_pn_ansenuza_07_ph_pablo_rodriguez_merkel.jpeg" alt="">
+                            <a href="cordoba.html" target="_self"><h5>Cordoba</h5></a>
+                        </figure>
+                        <figure class="destinos">
+                            <img src="img/ushuaia/destinoushuaia.jpg" alt="">
+                            <a href="ushuaia.html" target="_self"><h5>Ushuaia</h5></a>
+                        </figure>
+                    </div>
+                </article>
+        </section>
+
+        <a name="registro"></a>
+
+        <br>
+        <br>
+        <section class="registro">
+            <div class="cont-registro">
+            <article>
+                <h2>Mega oferta</h2>
+                <h1><span>30% off</span> Al registrarse</h1>
+                <ul>
+                    <li><i class='bx bx-check'></i>Las mejores locaciones</li>
+                    <li><i class='bx bx-check'></i>Experiencias inolvidables</li>
+                    <li><i class='bx bx-check'></i>El mejor precio</li>
+                </ul>
+            </article>  
+
+            
+            <form id="FormularioRegistro" method="POST"> 
+                <fieldset>
+                    <legend><h1>Registrate ahora</h1></legend>
+                    <!-- <label for="NombreF">Nombre</label> -->
+                    <input id="NombreF" type="text" name="NombreF" placeholder="Nombre" required>  
+                    <!-- <label for="Apellido">Apellido</label> -->
+                    <input id="Apellido" type="text" name="Apellido" placeholder="Apellido" required>  
+                    <!-- <label for="Usuario">Usuario</label> -->
+                    <input id="Usuario" type="text" name="Usuario" placeholder="Elegí tu nombre de usuario" required>    
+                    <!-- <label for="Edad">Edad</label> -->
+                    <input id="Edad" type="text" name="Edad" placeholder="Edad" required>
+                    <!-- <label for="Email">E-mail</label> -->
+                    <input id="Email" type="email" name="Email" placeholder="E-mail" autocomplete="email" required>
+                    <input id="Vigencia" type="text" name="Vigencia" placeholder="Vigencia" hidden>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿A donde te gustaría viajar?</legend>
+                    <select name="Destino" id="Destino" required>
+                        <option value="Misiones">Misiones</option>
+                        <option value=Salta>Salta</option>
+                        <option value="Cordoba">Córdoba</option>
+                        <option value="Ushuaia">Ushuaia</option>
+                    </select>                
+                </fieldset>
+                <fieldset>
+                    <legend>Elegí tus actividades Favoritas:</legend>
+                    <input id="Descanso" type="checkbox" name="Actividad" value="Descanso">
+                    <label for="Descanso">Descanso y relajación</label>
+                    <input type="checkbox" name="Actividad" id="safaris" value="Safaris Fotograficos">
+                    <label for="safaris">Safaris fotográficos</label>
+                    <input type="checkbox" name="Actividad" id="tur-adventure" value="Turismo aventura">
+                    <label for="tur-adventure">Turismo aventura</label>
+                </fieldset>
+                    <input id="Id_Cliente" name="Id_Cliente" type="hidden">
+                    <button type="button" value="Enviar datos" id="CrearRegistro">Enviar Datos</button>
+                
+                </form>
+                </div>
+        </section>
+
+
+<a name="testimonios"></a>
+<br>
+<br>
+<br>
+<br>
+        <section >
+            <article class="testimonios">
+                <H2>reseñas</H2>
+                <h1>Experiencias en primera persona</h1>
+                <p>
+                    Ofrecemos experiencias que se sienten en el cuerpo y el alma.
+                    <br> Nuestros viajeros ya lo saben y nos recomiendan
+                </p>
+            </article>            
+            <section id="main-reseñas">
+                <div class="carousel">
+                    <div class="carousel-container"></div>
+                    <div id="controles">
+                        <button class="carousel-button prev">Anterior</button>
+                        <button class="carousel-button next">Siguiente</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </main>
+<a name="contacto"></a>
+
+<footer>
+<section class="container">
+    <section class="ppal">
+            <figure class="col">
+            <a href="#inicio"><img src="img/Logo_ArgentiNA-vde-bco.webp" alt="" class="logo"></a>
+                <p>
+                Para nosotros lo mas importante es tu comodidad, ten siempre presente que daremos lo mejor para que tu estes bien.
+                </p>
+
+                <div class="social">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>                
+                </div>
+            </figure>
+
+            <figure class="col" id="servicios">
+                <h3>NUESTROS SERVICIOS</h3>
+                <div class="links">
+                <a href="#">Nosotros</a>
+                <a href="#">Destination</a>
+                <a href="#">Servicios</a>
+                </div>
+            </figure>
+
+            <figure class="col" id="contactos">
+                <h3>CONTACTO</h3>
+                <div class="contactos-detalles">
+                    <i class="bx bx-map"></i>
+                    <p>Calle 123, Siempre Viva</p>
+                </div>
+                <div class="contactos-detalles">
+                    <i class="bx bx-phone"></i>
+                    <p>+54 9 11 1234 5678</p>
+                </div>
+                <div class="contactos-detalles">
+                <i class="bx bx-mail-send"></i>
+                <p>info@codoacodo.com</p>
+                </div>
+            </figure>
+    </section>
+   
+</section>
+</footer>
+ <section class="copy">
+        <hr>
+        <p> Copyright Programa Codo a Codo - Equipo 20 - Todos los derechos reservados </p>
+         <a href="pages/index4.html"><p class="administracion">Administrar registros</p></a>
+    </section>
+<!-- script de json -->
+<script src="./js/json.js"></script>
+<script src="./js/registro_clientes.js"></script>
+    
+</body>
+</html>

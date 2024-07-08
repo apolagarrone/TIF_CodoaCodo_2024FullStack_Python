@@ -1,0 +1,100 @@
+
+
+[
+    {
+        "Destinos": [
+            {
+                "Nombre": "Marcela",
+                "Edad": 35,
+                "Servicio": "Excelente",
+                "Descripcion": "Lugar cómodo, divertido, muchas cosas para hacer",
+                "Origen": "Chile",
+                "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/luciaa.jpg"
+            },
+            {
+                "Nombre": "Juan",
+                "Edad": 45,
+                "Servicio": "Muy bueno",
+                "Descripcion": "Me encanto Misiones, tiene lugares hermosos",
+                "Origen": "Argentina",
+                "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/juan.jpg"
+            },
+            {
+                "Nombre": "Martina",
+                "Edad": 55,
+                "Servicio": "Muy bueno",
+                "Descripcion": "Volveria sin dudarlo a Cordoba, 10 puntos",
+                "Origen": "Chile",
+                "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/marcelaa.jpg"
+            },
+            {
+                "Nombre": "Pablo",
+                "Edad": 29,
+                "Servicio": "Excelente",
+                "Descripcion": "Me quede enamorado de Ushuaia, la laguna Esmeralda es bella",
+                "Origen": "Uruguay",
+                "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/pablo.jpg"
+            },
+            {
+                "Nombre": "Eduardo",
+                "Edad": 45,
+                "Servicio": "Excelente",
+                "Descripcion": "Me encanto el tren del fin del mundo",
+                "Origen": "Argentina",
+                "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/3.jpg"
+            },
+            {
+                "Nombre": "Paola",
+                "Edad": 39,
+                "Servicio": "Muy bueno",
+                "Descripcion": "Con mi familia volveriamos a Cordoba sin dudarlo",
+                "Origen": "Uruguay",
+                "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/martina.jpg"
+            },
+            {
+                "Nombre": "Pedro",
+                "Edad": 65,
+                "Servicio": "Excelente",
+                "Descripcion": "Las cataratas del Iguazu son magicas, me encanto",
+                "Origen": "Uruguay",
+                "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/agustin.jpg"
+            },
+            {
+                "Nombre": "Alejandra",
+                "Edad": 65,
+                "Servicio": "Bueno",
+                "Descripcion": "Lugares encantadores y bellos",
+                "Origen": "Uruguay",
+                "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/marcela.jpg"
+            },
+            {
+                "Nombre": "Agustin",
+                "Edad": 30,
+                "Servicio": "Excelente",
+                "Descripcion": "Las cascadas de Cafayate bellas, hermoso para hacer trekking ",
+                "Origen": "Uruguay",
+                "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/marcos.jpg"
+            },
+            {
+                "Nombre": "Valentina",
+                "Edad": 27,
+                "Servicio": "Excelente",
+                "Descripcion": "Salta es fascinante",
+                "Origen": "Uruguay",
+                "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/maria-rodriguez.jpg"
+            }
+
+
+
+
+
+
+
+        ]
+    }
+]
+
+
+
+
+	
